@@ -1,13 +1,13 @@
 export PYTHON=python3
 rm -f tmpfifo
 (
-    cd path2/namespace/pkg2/
+    cd path2/namespace/
     echo "## Should be exactly one passing unittest"
     $PYTHON -m unittest discover
 )
 
 (
-    cd path1/namespace/pkg1/
+    cd path1/namespace/
     echo "## Should be exactly one passing unittest"
     $PYTHON -m unittest discover
 )
